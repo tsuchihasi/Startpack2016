@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Unicode">
+    <link rel="stylesheet"
+    href="stylesheets/campaignform.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/validetta.css" type="text/css">
+    <meta name="description" content="検索エンジンに表示したい文章も、
+              このように文字コード宣言の後ろに書きます。">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style type="text/css">
+      <!--
+      a:hover{color:#ff0000;}
+      -->
+    </style>
+    <title>
+    　開業スタートパック2016お申し込みページ
+    </title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">開業スタートパック2016<br>
+        お申し込みページ</h1>
+      <hr color="#DDDDDD" size="0.2" />
+      <form id="form" class="form-horizontal">
+        <input name="SPREADSHEET_ID" type="hidden" value="1KJNNa0uhjy8vgq6AddNrG3KhFDmojTRzA5jwBhM8U3M" />
+        <input name="SHEET_NAME" type="hidden" value="フォームデータ" />
+        <div class="form-group">
+          <label class="col-md-2 control-label">登録するサービス</label>
+          <div class="col-md-10">
+            <input type="checkbox" name="Coiney" id="chbox_co">カード決済 Coiney<br>
+            <input type="checkbox" name="Ubiregi" id="chbox_ub">POSレジ ユビレジ<br>
+            <input type="checkbox" name="Freee" id="chbox_fr">経営管理 freee<br>
+            <input type="checkbox" name="Japannetbank" id="chbox_jb">法人口座 ジャパンネット銀行<br>
+            <input type="checkbox" name="Jobcan" id="chbox_jc">勤怠管理 ジョブカン<br>
+            <input type="checkbox" name="Monstarchannel" id="chbox_mc">店内BGM モンスターチャンネル<br>
+        　</div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">お名前</label>
+          <div class="col-md-10 name" data="name">
+            <input class="form-control" name="name" placeholder="コイニー太郎" required="required" data-validetta="required"/>
+          </div>
+        </div>
+          <div class="form-group">
+            <label class="col-md-2 control-label">メールアドレス</label>
+            <div class="col-md-10 email" data="email">
+              <input class="form-control" name="email" placeholder="test@test.com" type="email" required="required"/>
+              <p class="help-block">メールアドレスを入力すると、そのアドレス宛に自動返信メールを送信します。</p>
+            </div>
+          </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">パスワード</label>
+          <div class="col-md-10 password" data="password">
+            <input class="form-control" name="password" placeholder="" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">電話番号</label>
+          <div class="col-md-10 phone" data="phone">
+            <input class="form-control" name="phone" placeholder="例：09035751793" type="tel" pattern="\d{1,5}-\d{1,4}-\d{4,5}" title="市外局番からハイフン(-)を入れずにしてください" required="required"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">企業形態</label>
+          <div class="col-md-10">
+            <div class="col-md-11">
+              <input type="radio" name="corporation" value="法人" id="法人" title="どちらかを選択してください">
+              <label for="法人" class="switch-on">法人</label>
+              <input type="radio" name="corporation" value="個人" id="個人" title="どちらかを選択してください">
+              <label for="個人" class="switch-off">個人</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">利用規約</label>
+          <div class="col-md-10">
+            <div class="col-md-11">
+              <input type="radio" name="terms" value="同意する" id="同意する">
+              <label for="同意する" class="switch-on">同意する</label>
+              <input type="radio" name="terms" value="同意しない" id="同意しない">
+              <label for="同意しない" class="switch-off">同意しない</label>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="form-group">
+          <label class="col-md-2 control-label">一言コメント</label>
+          <div class="col-md-10 comment"  data="comment">
+            <input class="form-control" name="comment" placeholder="キャンペーンをどこで知りましたか？" required="required" />
+          </div>
+        </div> -->
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-10">
+            <input class="btn btn-primary" type="submit"></input>
+          </div>
+        </div>
+    </form>
+  </div>
+  <div id="loading"><img src="images/loading.gif"></div>
+  <script type="text/javascript" src="javascripts/campaignform.js"></script>
+  <script type="text/javascript" src="javascripts/validetta.js"></script>
+</body>
